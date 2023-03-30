@@ -9,6 +9,7 @@ terraform {
 
 provider "aws" {
   # Configuration options
+  region="us-west-2"
 }
 
 resource "aws_rds_cluster" "default" {
