@@ -29,9 +29,9 @@ resource "aws_lb_listener" "front_end" {
 
    redirect {
 
-      port        = "443"
+      port        = "80"
 
-      protocol    = "HTTPS"
+      protocol    = "HTTP"
 
       host = "#{host}"
 
