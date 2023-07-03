@@ -28,8 +28,8 @@ resource "aws_lb_listener" "front_end" {
     type = "redirect"
 
     redirect {
-      port        = "234"
-      protocol    = "HTTPS"
+      port        = "443"
+      protocol    = "HTTP"
       status_code = "HTTP_301" 
      
     }
