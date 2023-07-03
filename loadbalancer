@@ -45,8 +45,8 @@ resource "aws_lb_listener_rule" "redirect_http_to_https" {
     type = "redirect"
 
     redirect {
-      port        = "345"
-      protocol    = "HTTPS"
+      port        = "443"
+      protocol    = "HTTP"
       status_code = "HTTP_301"      
     }
   }
