@@ -42,10 +42,10 @@ resource "aws_lb_listener_rule" "redirect_http_to_https" {
   listener_arn = aws_lb_listener.front_end.arn
 
   action {
-    type = "forward"
+    type = "redirect"
 
     redirect {
-      port        = "443"
+      port        = "345"
       protocol    = "HTTPS"
       status_code = "HTTP_301"      
     }
